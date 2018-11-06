@@ -1,0 +1,95 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																														
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                         kits.yml
+#
+# Enchantment syntax: {Enchantment_Name}:{Level}
+# Enchantment name can be figured out this website.
+# http://wiki.ess3.net/wiki/Enchantments
+# 
+# Example of kits configuration.
+# Kits:
+#   Warior:                            # You doesn't matter of what you're putting here.
+#     id: 0                            # ID of the kit ! It's used for mysql to store purchased kits by players ! Each kits MUST have a different ID !
+#     name: Warior                     # Name of the kit.
+#     permission: uhc.kits.warior      # Permission to use/buy this kit
+#     itemID: 267                      # ID item that will be displayed on kit menu.
+#     itemData: 0                      # Data item that will be displayed on kit menu.
+#     price: 50.0                      # Price of the kit
+#     description:                     # Description list of the kit.
+#       - Have an stone sword
+#       - at the start of the game.
+#     items:                          # Items list of the kit.
+#       '1':
+#         id: 267                     # Id of the item.
+#         material: IRON_SWORD        # Material of Item
+#         data: 0                     # Data of the item.
+#         amount: 1                   # Amount of item.
+#         name: default               # Name of the item , here is set on default.
+#         enchantment:                # Enchantment list of the item.
+#           - FIRE_ASPECT:2
+#           - DAMAGE_ALL:3
+#         description:                # Description list of the item.
+#           - Warior kit.
+#       '2':
+#         id: 267                     # Id of the item.
+#         data: 0                     # Data of the item.
+#         amount: 1                   # Amount of item.
+#         name: Amazing               # Name of the item , here is a custom one.
+#         enchantment:                # Enchantment list of the item.
+#           - FIRE_ASPECT:2
+#           - DAMAGE_ALL:3
+#         description:                # Description list of the item.
+#           - Warior kit.
+
+# Enable or not kits
+enabled: false
+
+# Enable purchase of kit. If this option is enabled, player will need to pay to gain access the kit
+# This OPTION require VAULT AND MYSQL enabled !
+# Table is the MYSQL table name where will be store data of player's kit
+Purchase:
+  enabled: false
+  table: UHCKit
+
+# Item of Kit GUI Item.
+id-item: 339
+
+# Slot where the item will be (0 - 8 )
+slot-item: 1
+
+# Kits
+Kits:
+  Warior:
+    id: 0
+    name: Warior
+    permission: uhc.kits.warior
+    itemID: 1
+    itemData: 0
+    price: 50.0
+    description:
+    - Have an stone sword
+    - at the start of the game.
+    items:
+      '1':
+        id: 267
+        material: minecraft:iron_sword
+        data: 0
+        amount: 1
+        name: default
+        enchantment:
+          - FIRE_ASPECT:2
+        description:
+          - Warior Kit.

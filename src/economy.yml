@@ -1,0 +1,30 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																												
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                        economy.yml 				
+
+# WARNING: If you want use this file, it consider that you have an economy plugin that hook to VAULT ! Otherwise it wont work !
+
+# Enable Vault or not
+vault: false
+
+# Customise money that player can earn (Only if vault enabled)
+Gain:
+  # Money on win
+  win: 10
+  # Money on kill
+  kill: 10
+  # Money for having participate
+  participate: 10

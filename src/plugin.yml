@@ -1,0 +1,18 @@
+name: UHCReloaded
+version: 3.2.10
+main: net.upd4ting.uhcreloaded.UHCReloaded
+api-version: 1.13
+load: startup
+depend: [ProtocolLib, BKCommonLib]
+softdepend: [Vault, PlaceholderAPI]
+author: Upd4ting
+commands:
+  game:
+    aliases: [g, ga, game]
+  team:
+    aliases: [t, teammate, equipe, coop]
+  hub:
+    aliases: [lobby, lobbies, lobbi, hubs]
+  stat:
+    usage: /stat <name>
+    aliases: [stats, statistique]

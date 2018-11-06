@@ -1,0 +1,68 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/            
+#                                                       
+#                                   Developed By Upd4ting                   
+#                                       Version: 3.1.4                     
+#                                      scoreboard.yml   
+
+# TIP: Scoreboard can support 15 line in maximum!
+# Placeholder
+# Only on game started:
+#  %timers = Add timers info in a dynamic way (To translate go in lang.yml)
+#  %teamAlive = Show number of team alive.
+#  %playerSpectator = Show number of spectator. 
+#  %playerAlive = Show number of player alive.
+#  %wbSize = Show the size of World Border.
+#  %kill = Number of kill that the player has done for all the game.
+#  %gameKill = Number of kill that the player has done for this game.
+#  %center = Display an arrow that point on the center of the map
+#  %ylayer = Display the y layer where the player is.
+# Only on game waiting:
+#  %playerTotal = Show number of player total. 
+#  %playerMaximum = Show number of player maximum. 
+# On game started or waiting:
+#  %teams = Show teammate of the player (must be alone in a sentence), in a dynamic way (To translate go in lang.yml).
+
+# Enable or disable scoreboard
+enabled: true
+
+# Title of the scoreboard (You can put %t to display the current time of the game)
+title: '&3&lUHC &8» &b%t'
+
+# Scoreboard while waiting...
+waiting:
+- '&7&lPlayers:'
+- '&b%playerTotal &3/ &b%playerMaximum'
+- '%teams'
+
+# Scoreboard while game is started.
+ingame:
+- '%timers'
+- '&7&lStats:'
+- '&3  Players: &b%playerAlive'
+- '&3  Team: &b%teamAlive'
+- '&3  Kill: &b%kill'
+- '&7&lInfo:'
+- '&3  Center: &b%center'
+- '&3  Wb: &b%wbSize'
+- '%teams'
+
+# Scoreboard while in spectator
+spectator:
+- '%timers'
+- '&7&lStats:'
+- '&3  Players: &b%playerAlive'
+- '&3  Team: &b%teamAlive'
+- '&3  Kill: &b%kill'
+- '&7&lInfo:'
+- '&3  Wb: &b%wbSize'

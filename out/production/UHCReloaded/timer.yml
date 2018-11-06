@@ -1,0 +1,102 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																													
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                         timer.yml
+# WARNING: All the time are in second !
+
+# Time to start the game
+time-to-start: 180
+
+# Time to start the game when players has reached the limit to start faster
+time-to-start-full: 10
+
+# Active no hunger while PVP is disabled
+nohunger-when-pvp-disabled: true
+
+# Time in second to active PVP
+pvp-start: 600
+
+# Time in second to wait to shutdown the server at the end of the game
+time-to-shutdown: 15
+
+# Time player is invincible after teleportation
+time-invincible: 30
+
+# World Border Configuration
+WorldBorder:
+  # Whether or not World Border is enabled
+  enabled: true
+
+  # Whether shrinking is enabled or not
+  shrinking-enabled: true
+
+  # Time in second to begin shrinking the World Border
+  timeStart: 2400
+
+  # Size that World Border will start as
+  sizeStart: 100
+
+  # Size the World Border will stop at
+  sizeEnd: 25
+
+  # Time of the shrink
+  shrink-time: 300
+
+  # Number of damage per second to the player that quit the border
+  damage: 2
+
+# Death Match configuration
+DeathMatch:
+  # Whether or not Death Match is enabled
+  enabled: false
+
+  # Time to start Death Match
+  timeStart: 1000
+
+  # Custom world (to provide custom arena around center 0 of the world)
+  worldName: world
+
+  # Whether shrinking is enabled or not
+  shrinking-enabled: true
+
+  # Size the World Border will start at
+  sizeStart: 100
+
+  # Size the World Border will stop at
+  sizeEnd: 50
+
+  # Time in second to begin shrinking the World Border when deathmatch is active
+  time-start-shrinking: 2400
+
+  # Time of the shrink
+  shrink-time: 300
+
+  # Number of damage per second to the player that quit the border
+  damage: 2
+
+# Popo speed configuration (at start of the game)
+Speed:
+  enabled: true
+  time: 120
+  speed-value: 2
+  particleEffect: false
+
+# Heal timer
+# Player will receive an regeneration effect
+Heal:
+  enabled: true
+  timeStart: 300
+  regen-amplificator: 0
+  regen-time: 5

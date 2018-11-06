@@ -1,0 +1,140 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																													
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                         lang.yml 	
+
+# You can customize all the messages of the plugin
+# ALL THE MESSAGE CAN BE DISABLED BY PUTTING THE MESSAGE TO 'DISABLED'
+# WARNING: Inventory name cannot be longer than 32 character !
+
+# All gameplay message
+Gameplay:
+  join: '&b%p &3joined the game &3(&b%current&3/&b%max&3)'
+  leave: '&b%p &3left the game &3(&b%current&3/&b%max&3)'
+  leaveIngame: '&b%p &3left the game!'
+  rejoin: '&b%p &3rejoined the game in time!'
+  death: '&b%p &3has died!'
+  deathByPlayer: '&b%p has been killed by &4%k'
+  joinSpec: '&3You are now a spectator!'
+  itemReturnLobby: '&3Return to the Lobby'
+  gameStart: '&3Game has started!'
+  gameTimeStart: '&3Game starts in &b%t&3 seconds'
+  teamWin: '&3Players:&b %winners &3have won!'
+  playerWin: '&b%p &3has won!'
+  lobbyTp: '&4You can''t get out of the lobby!'
+  spectatorTp: '&4Don''t go to far away from a player!'
+  noEnoughPlayer: '&4Not enough players to start the game!'
+  leaderboard: '&7&m------&2 Leaderboard&7&m------'
+  receiveHeal: '&2You have received the final heal.'
+  goldenHead: 'Golden head'
+  revived: '&4You have been revived!'
+
+# All team message
+Team:
+  prefix: '&8[&eTeam&8]'
+  disabled: '&4Team command isn''t active when the game has started'
+  guiActived: '&4You need to select your team using the GUI'
+  wrongSyntaxCommand: '&4Wrong syntax. Use /team to get the help message'
+  playerNotOnline: '&4The player %p isn''t online!'
+  sendInvitation: '&6You have sent an invitation to &b%p.&6The invitation will expire in %t seconds...'
+  receivedInvitation: '&6You have received an invitation from &b%p.&6The invitation will expire in %t seconds...'
+  alreadyInvited: '&4You have already invited &b%p'
+  alreadyInTeam: '&b%p &4is already in the team'
+  joinTeam: '&b%p joined the team!'
+  leaveTeam: '&b%p left the team!'
+  teamFull: '&4Team is full!'
+  newTeamOwner: '&6%p is the new owner of the team!'
+  notOwner: '&4Only the owner can do that!'
+  notInTeam: '&4You are not in a team'
+  nameMenu: '&8Team selection'
+  nameItem: '&6Select a team'
+  helpMessage:
+    - '&4Team is disabled.'
+
+# All GUI translation
+Kit:
+  nameMenu: '&8Selected kit: &4%k'
+  nameItem: '&6Select a kit'
+  canSelectKit: '&aYou can select this kit !'
+  costKit: '&4This kit cost %m'
+  dontHavePermission: '&4You don''t have permission for this kit!'
+  selectKit: '&6You have selected the kit: %k'
+  selectedKit: '&aYou have selected this kit!'
+  notEnoughMoney: '&4You don''t have enough money to buy this kit!'
+  buyKit: '&aYou have buy the kit: %k'
+
+# Translation for economy
+Economy:
+  earnOnKill: '&6You earned %m from this kill!'
+  earnOnWin: '&6You earned %m from this win!'
+  earnOnParticpate: '&6You earned %m for having participate!'
+
+# All MOTD translation
+Motd:
+  loading: '&3Loading.. &b%progress&3%'
+  waiting: '&3Waiting'
+  ingame: '&4&nIngame'
+  finished: '&4End'
+
+# All kick message translation
+Kick:
+  loading: '&4The world is loading!'
+  gameStarted: '&4The game has started!'
+  gameFinished: '&4The game is finished!'
+  gameFull: '&4The game is full'
+
+# All timers message translation
+Timer:
+  damageTime: '&3Damage will be enabled in &4%t'
+  damageEnabled: '&3Damage has been enabled!'
+  pvpTime: '&3PvP will start in &b%t&3.'
+  pvpEnabled: '&3PvP has been enabled!'
+  dmTime: '&3Deathmatch will start in &b%t&3.'
+  dmEnabled: '&3Deathmatch has started!'
+  wbTime: '&3Border will shrink in &b%t&3.'
+  wbEnabled: '&3Border has started shrinking'
+  healTime: '&3You will receive some health in &b%t&3.'
+  healEnabled: '&3You have received the final heal.'
+
+# All Scoreboard translation
+# For teamInfo:
+#             %p = playerName of the teammate
+#             %distance = Distance in block from his teammate
+#             %arrow = Arrow that indicate the direction to the teammate
+Scoreboard:
+  timerDelimitor: '&7&lTimers:'
+  damage: '&3  Damage: &b%t'
+  border: '&3  Border: &b%t'
+  pvp: '&3  PvP: &b%t'
+  deathmatch: '&3  TP: &b%t'
+  heal: '&3  Health: &b%t'
+  teammatesDelimitor: '&3  Team'
+  teamInfo: '%p &7(&e%distance &7b) %arrow'
+  leftArrow: '&6<'
+  rightArrow: '&6>'
+  upArrow: '&6^'
+  downArrow: '&6V'
+
+# Translation for Stat command
+StatCommand:
+  playerNotExist: '&4Player isn''t online!'
+  usage: '&3Usage: &b/stats <name>'
+  info:
+    - '&7&m------ &b%name&3''s stats &7&m------'
+    - '&3Kill: &b%kill'
+    - '&3Death: &b%death'
+    - '&3Win: &b%win'
+    - '&3Lose: &b%lose'
+    - '&3Game played: &b%gamePlayed'

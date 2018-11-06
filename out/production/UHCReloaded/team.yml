@@ -1,0 +1,61 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																														
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                         team.yml 	
+
+# Enable or disable team system
+enabled: true
+
+# Enable or disable auto fill of teams
+# AutoFill is forced when the GUI is enabled
+auto-fill: false
+
+# Team size (must be > 1)
+team-size: 2
+
+# Invitations expiration time (in second)
+expire-time: 30
+
+# Enable or disable GUI menu system
+gui-enabled: false
+
+# ID of the item to open the GUI menu
+gui-item: 421
+
+# Slot where the item will be (0 - 8 )
+slot-item: 0
+
+# Preconfigurated team for GUI menu when player create his team
+# He can chose one of the preconfigurated name/item for his team !
+# You need to modify that list only if gui is enabled
+#
+# TIP: Dont put a too long 'DISPLAYNAME' it will cause bugs (16 length max)
+# 
+# Usage: ID:DATA:DISPLAYNAME:NAMEMENU
+#
+# ID = Item's ID
+# DATA = Item's DATA
+# DISPLAYNAME = The name displayed over the head of the player
+# NAMEMENU = The name in the GUI menu
+#
+# Example: 
+# preconfigurated-team:
+# - 46:0:&4[TNT]:&4TNT Team
+# - 46:0:&4[TNT2]:&4TNT2 Team
+#
+# WARNING: You must configure enough team for all the player
+# Number of team minimum = maxPlayer / teamSize !!
+
+preconfigurated-team: []

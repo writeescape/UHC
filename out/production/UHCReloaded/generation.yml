@@ -1,0 +1,37 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																												
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                      generation.yml 		
+
+# Enable or not custom ore's generation rules
+enableRule: true
+
+# Ore's generation rules
+# Syntax: BLOCKID:CHANCE:MINHEIGHT:MAXHEIGHT:SIZE:ROUND
+# MINHEIGHT: Min Y where can spawn
+# MAXHEIGHT: Max Y where can spawn
+# SIZE: Vein's size
+# ROUND: Number of vein in chunk
+# Example:
+# rules:
+# - 56:100:0:100:12:6
+rules: 
+  - 56:100:0:40:12:6
+
+# SugarCaneGenerator
+# Enable it if you want more sugar cane !!
+SugarCaneGenerator:
+  enabled: false
+  percent: 10

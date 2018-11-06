@@ -1,0 +1,125 @@
+# ____ ___.__   __                    ___ ___                  .___                          
+#|    |   \  |_/  |_____________     /   |   \_____ _______  __| _/____  ___________   ____  
+#|    |   /  |\   __\_  __ \__  \   /    ~    \__  \\_  __ \/ __ |/ ___\/  _ \_  __ \_/ __ \ 
+#|    |  /|  |_|  |  |  | \// __ \_ \    Y    // __ \|  | \/ /_/ \  \__(  <_> )  | \/\  ___/ 
+#|______/ |____/__|  |__|  (____  /  \___|_  /(____  /__|  \____ |\___  >____/|__|    \___  >
+#                               \/         \/      \/           \/    \/                  \/ 
+#                __________       .__                    .___         .___                   
+#                \______   \ ____ |  |   _________     __| _/____   __| _/                   
+#                 |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ |                   
+#                 |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ |                   
+#                 |____|_  /\___  >____/\____(____  /\____ |\___  >____ |                    
+#                        \/     \/                \/      \/    \/     \/   				 
+#																										
+#                                   Developed By Upd4ting 									
+#                                       Version: 3.1.4										 
+#                                        config.yml 
+
+# Minimum of player to start the game
+minplayer: 12
+
+# Maximum of player in the game
+maxplayer: 24
+
+# Permission to join the game when game is full
+bypass-max: 'clysternetwork.join.full'
+
+# Enable eternal day
+eternal-day: false
+
+# Enable hook in placeholderapi
+placeholderapi: false
+
+# Configure the number of chunk that is loaded during an custom interval
+# You need to change this if your server can't support the loading world state!
+# Interval is in tick, 20 tick is one second
+ChunkLoader:
+  chunk-per-interval: 200
+  interval: 1
+
+# Enable or disable the lobby schematic. If activated put a schematic called
+# lobby.schematic in your folder UHC
+# Players will spawn where the block id you've indicated and the block will be removed, if there is no block of that id
+# a random spawn will be randomly generated.
+# Example of plateform and spawn set on the middle with diamond block
+# -> https://gyazo.com/d1c3c86ede4571abf507cf7ffa903d8e
+Schematic:
+  enabled: false
+  block: 57
+
+# Bungee lobby configurationLobby:
+Lobby:
+  enabled: true
+  name-in-bungeeconfig: 'Hub'
+  item-id: 355
+
+
+# Command to restart the server
+command-restart-server: restart
+
+# Enable or not the fact that players can rejoin after having left the game!
+# Time is in second !
+# MaxRejoin is the maximum of time that a player can rejoin
+Rejoin:
+  enabled: true
+  time-max: 60
+  maxRejoin: 1
+
+# Enable or not the fact that players can join the game in spectator
+# when the game is started
+SpectatorJoin:
+  enabled: true
+  permission: 'clysternetwork.join.spectator'
+
+# Default Health of each player
+health-player: 20.0
+
+# Display style of health in tab!
+# Type 'dummy' for numeric style
+# Type 'health' for heart style
+# DO NOT PUT ANYTHING ELSE!
+tab-health-display-style: 'health'
+
+# Enable or disable friendly fire
+friendly-fire: false
+
+# Active or not Spectator Mode and configure his permission
+# Max distance is the distance max that they can get far away from player!
+# If you enable 'old' you will have a spectator system like in 1.7 version, your spectator will be in CREATIVE mode
+# If not enabled your spectator will be in SPECTATOR mode (need 1.8+ version to work)
+Spectator:
+  enabled: true
+  maxDistance: 50
+  permission: 'clysternetwork.spectator'
+  onlySpecTeammates: false
+  old: true
+
+# Enable or disable GoldenHeads on kill
+# GoldenHead heal all the team on right click
+# Time is in second
+GoldenHeads:
+  enabled: true
+  regen-amplificator: 0
+  regen-time: 9
+
+# Enable or disable fall damage
+fall-damage: true
+
+# Enable or disable treecutter
+treecutter: true
+
+# Craft of wood tools will directly gives stone tools
+craft-increased: false
+
+# Enable the fact to break obsidian faster
+obsidian-faster: true
+
+# Customize regeneration time of golden apple
+GoldenRegen:
+  golden-apple: 5
+  golden-notch: 10
+
+# Your done Now just leave a 5 star review, and report any bugs
+Left5StarReview: false
+
+# Made with love <3

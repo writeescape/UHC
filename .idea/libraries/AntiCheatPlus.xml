@@ -1,0 +1,43 @@
+<component name="libraryTable">
+  <library name="AntiCheatPlus">
+    <CLASSES>
+      <root url="jar://G:/Upd4ting/AntiCheatPlus.jar!/" />
+      <root url="jar://G:/Upd4ting/BKCommonLib-1.13.2-v1-SNAPSHOT.jar!/" />
+      <root url="jar://G:/Upd4ting/LeaderHeadsAPI.jar!/" />
+      <root url="jar://G:/Upd4ting/NoCheatPlus.jar!/" />
+      <root url="jar://G:/Upd4ting/PlaceholderAPI.jar!/" />
+      <root url="jar://G:/Upd4ting/ProtocolLib.jar!/" />
+      <root url="jar://G:/Upd4ting/ProtocolLib1.7.jar!/" />
+      <root url="jar://G:/Upd4ting/QualityArmory.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.10.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.11.2-R0.1-SNAPSHOT.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.11.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.12.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.13.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.7.10-R0.1-SNAPSHOTBuild1646.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.8-R0.1-SNAPSHOT-latest.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.8.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.9-R0.1-SNAPSHOT-latest.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.9.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.9.4.jar!/" />
+      <root url="jar://G:/Upd4ting/Vault.jar!/" />
+      <root url="jar://G:/Upd4ting/Waterfall.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://G:/Upd4ting/spigot-1.10.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.11.2-R0.1-SNAPSHOT.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.11.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.12.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.13.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.7.10-R0.1-SNAPSHOTBuild1646.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.8-R0.1-SNAPSHOT-latest.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.8.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.9-R0.1-SNAPSHOT-latest.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.9.2.jar!/" />
+      <root url="jar://G:/Upd4ting/spigot-1.9.4.jar!/" />
+    </SOURCES>
+  </library>
+</component>
