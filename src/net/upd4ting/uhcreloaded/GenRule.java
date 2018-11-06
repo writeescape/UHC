@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.Material;
-
+import net.upd4ting.uhcreloaded.util.IDTools;
 import net.upd4ting.uhcreloaded.exception.InvalidConfigException;
+import net.upd4ting.uhcreloaded.nms.NMSHandler;
 
 public class GenRule {
 	public static List<GenRule> rules = new ArrayList<>();
@@ -34,17 +35,30 @@ public class GenRule {
 	public int getSize() { return this.size; } 
 	public int getRounds() { return this.rounds; }
 	
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings("depreciation")
 	public static GenRule unparse(String parsed) throws InvalidConfigException {
 		String[] splitted = parsed.split(":");
-		Integer mat = Integer.parseInt(splitted[0]);
-		Material material = Material.
-		Integer probability = Integer.parseInt(splitted[1]);
-		Integer minHeight = Integer.parseInt(splitted[2]);
-		Integer maxHeight = Integer.parseInt(splitted[3]);
-		Integer size = Integer.parseInt(splitted[4]);
-		Integer round = Integer.parseInt(splitted[5]);
-		
-		return new GenRule(material, probability, minHeight, maxHeight, size, round);
+		NMSHandler nms = new NMSHandler();
+		String version = nms.getNmsVersion();
+			if(version.startsWith("v1_13")){
+				IDTools I = new IDTools();
+				Integer mat = Integer.parseInt(splitted[0]);
+				Material material = I.getMaterial(mat);
+				Integer probability = Integer.parseInt(splitted[1]);
+				Integer minHeight = Integer.parseInt(splitted[2]);
+				Integer maxHeight = Integer.parseInt(splitted[3]);
+				Integer size = Integer.parseInt(splitted[4]);
+				Integer round = Integer.parseInt(splitted[5]);
+				return new GenRule(material, probability, minHeight, maxHeight, size, round);
+			} else {
+				Integer mat = Integer.parseInt(splitted[0]);
+				Material material = Material.getMaterial(mat);
+				Integer probability = Integer.parseInt(splitted[1]);
+				Integer minHeight = Integer.parseInt(splitted[2]);
+				Integer maxHeight = Integer.parseInt(splitted[3]);
+				Integer size = Integer.parseInt(splitted[4]);
+				Integer round = Integer.parseInt(splitted[5]);
+				return new GenRule(material, probability, minHeight, maxHeight, size, round);
+			}
 	}
 }

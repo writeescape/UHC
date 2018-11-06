@@ -2,10 +2,6 @@ package net.upd4ting.uhcreloaded.util;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.ParseException;
-import org.json.simple.parser.JSONParser;
 import org.apache.commons.lang.StringUtils;
 
 import org.bukkit.Material;
@@ -590,47 +586,47 @@ public class IDTools {
             IdList.put("382:0" , Material.GLISTERING_MELON_SLICE);
             IdList.put("383:4", Material.ELDER_GUARDIAN_SPAWN_EGG);
             IdList.put("383:5", Material.WITHER_SKELETON_SPAWN_EGG);
-            IdList.put("383:6", Material. STRAY_SPAWN_EGG);
-            IdList.put("383:23", Material. HUSK_SPAWN_EGG);
-            IdList.put("383:27", Material. ZOMBIE_VILLAGER_SPAWN_EGG);
-            IdList.put("383:28", Material. SKELETON_HORSE_SPAWN_EGG);
-            IdList.put("383:29", Material. ZOMBIE_HORSE_SPAWN_EGG);
-            IdList.put("383:31", Material. DONKEY_SPAWN_EGG);
-            IdList.put("383:32", Material. MULE_SPAWN_EGG);
-            IdList.put("383:34", Material. EVOKER_SPAWN_EGG);
-            IdList.put("383:35", Material. VEX_SPAWN_EGG);
-            IdList.put("383:36", Material. VINDICATOR_SPAWN_EGG);
-            IdList.put("383:50", Material. CREEPER_SPAWN_EGG);
-            IdList.put("383:51", Material. SKELETON_SPAWN_EGG);
-            IdList.put("383:52", Material. SPIDER_SPAWN_EGG);
-            IdList.put("383:54", Material. ZOMBIE_SPAWN_EGG);
-            IdList.put("383:55", Material. SLIME_SPAWN_EGG);
-            IdList.put("383:56", Material. GHAST_SPAWN_EGG);
-            IdList.put("383:57", Material. ZOMBIE_PIGMAN_SPAWN_EGG);
-            IdList.put("383:58", Material. ENDERMAN_SPAWN_EGG);
-            IdList.put("383:59", Material. CAVE_SPIDER_SPAWN_EGG);
-            IdList.put("383:60", Material. SILVERFISH_SPAWN_EGG);
-            IdList.put("383:61", Material. BLAZE_SPAWN_EGG);
-            IdList.put("383:62", Material. MAGMA_CUBE_SPAWN_EGG);
-            IdList.put("383:65", Material. BAT_SPAWN_EGG);
-            IdList.put("383:66", Material. WITCH_SPAWN_EGG);
-            IdList.put("383:67", Material. ENDERMITE_SPAWN_EGG);
-            IdList.put("383:68", Material. GUARDIAN_SPAWN_EGG);
-            IdList.put("383:69", Material. SHULKER_SPAWN_EGG);
-            IdList.put("383.9", Material. PIG_SPAWN_EGG);
-            IdList.put("383.91", Material. SHEEP_SPAWN_EGG);
-            IdList.put("383.92", Material. COW_SPAWN_EGG);
-            IdList.put("383.93", Material. CHICKEN_SPAWN_EGG);
-            IdList.put("383.94", Material. SQUID_SPAWN_EGG);
-            IdList.put("383.95", Material. WOLF_SPAWN_EGG);
-            IdList.put("383.96", Material. MOOSHROOM_SPAWN_EGG);
-            IdList.put("383.98", Material. OCELOT_SPAWN_EGG);
-            IdList.put("383:100", Material. HORSE_SPAWN_EGG);
-            IdList.put("383:101", Material. RABBIT_SPAWN_EGG);
-            IdList.put("383:102", Material. POLAR_BEAR_SPAWN_EGG);
-            IdList.put("383:103", Material. LLAMA_SPAWN_EGG);
-            IdList.put("383:105", Material. PARROT_SPAWN_EGG);
-            IdList.put("383:120", Material. VILLAGER_SPAWN_EGG);
+            IdList.put("383:6", Material.STRAY_SPAWN_EGG);
+            IdList.put("383:23", Material.HUSK_SPAWN_EGG);
+            IdList.put("383:27", Material.ZOMBIE_VILLAGER_SPAWN_EGG);
+            IdList.put("383:28", Material.SKELETON_HORSE_SPAWN_EGG);
+            IdList.put("383:29", Material.ZOMBIE_HORSE_SPAWN_EGG);
+            IdList.put("383:31", Material.DONKEY_SPAWN_EGG);
+            IdList.put("383:32", Material.MULE_SPAWN_EGG);
+            IdList.put("383:34", Material.EVOKER_SPAWN_EGG);
+            IdList.put("383:35", Material.VEX_SPAWN_EGG);
+            IdList.put("383:36", Material.VINDICATOR_SPAWN_EGG);
+            IdList.put("383:50", Material.CREEPER_SPAWN_EGG);
+            IdList.put("383:51", Material.SKELETON_SPAWN_EGG);
+            IdList.put("383:52", Material.SPIDER_SPAWN_EGG);
+            IdList.put("383:54", Material.ZOMBIE_SPAWN_EGG);
+            IdList.put("383:55", Material.SLIME_SPAWN_EGG);
+            IdList.put("383:56", Material.GHAST_SPAWN_EGG);
+            IdList.put("383:57", Material.ZOMBIE_PIGMAN_SPAWN_EGG);
+            IdList.put("383:58", Material.ENDERMAN_SPAWN_EGG);
+            IdList.put("383:59", Material.CAVE_SPIDER_SPAWN_EGG);
+            IdList.put("383:60", Material.SILVERFISH_SPAWN_EGG);
+            IdList.put("383:61", Material.BLAZE_SPAWN_EGG);
+            IdList.put("383:62", Material.MAGMA_CUBE_SPAWN_EGG);
+            IdList.put("383:65", Material.BAT_SPAWN_EGG);
+            IdList.put("383:66", Material.WITCH_SPAWN_EGG);
+            IdList.put("383:67", Material.ENDERMITE_SPAWN_EGG);
+            IdList.put("383:68", Material.GUARDIAN_SPAWN_EGG);
+            IdList.put("383:69", Material.SHULKER_SPAWN_EGG);
+            IdList.put("383.9", Material.PIG_SPAWN_EGG);
+            IdList.put("383.91", Material.SHEEP_SPAWN_EGG);
+            IdList.put("383.92", Material.COW_SPAWN_EGG);
+            IdList.put("383.93", Material.CHICKEN_SPAWN_EGG);
+            IdList.put("383.94", Material.SQUID_SPAWN_EGG);
+            IdList.put("383.95", Material.WOLF_SPAWN_EGG);
+            IdList.put("383.96", Material.MOOSHROOM_SPAWN_EGG);
+            IdList.put("383.98", Material.OCELOT_SPAWN_EGG);
+            IdList.put("383:100", Material.HORSE_SPAWN_EGG);
+            IdList.put("383:101", Material.RABBIT_SPAWN_EGG);
+            IdList.put("383:102", Material.POLAR_BEAR_SPAWN_EGG);
+            IdList.put("383:103", Material.LLAMA_SPAWN_EGG);
+            IdList.put("383:105", Material.PARROT_SPAWN_EGG);
+            IdList.put("383:120", Material.VILLAGER_SPAWN_EGG);
             IdList.put("384:0" , Material.EXPERIENCE_BOTTLE);
             IdList.put("385:0" , Material.FIRE_CHARGE);
             IdList.put("386:0" , Material.WRITABLE_BOOK);
@@ -737,7 +733,7 @@ public class IDTools {
 
     public Material getMaterial(Integer Id) {
 
-        if (IdList.containsKey(Id)) {
+        if (IdList.containsKey(""+Id+":0")) {
 
             return IdList.get(Id);
 

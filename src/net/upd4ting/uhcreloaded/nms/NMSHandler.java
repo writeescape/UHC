@@ -62,7 +62,7 @@ public class NMSHandler {
 		}
 	}
 	
-	public static String getNmsVersion() {
+	public String getNmsVersion() {
 		return NMS_VERSION;
 	}
 	
